@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+article {
+    width: 25px;
+    height: 400px;
+    background-color: gray;
+    transition: 0.8s;
+    position: absolute;
+}
+.start-menu {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    margin-left: 19px;
+    width: 100px;
+    color: white;
+    position: sticky;
+    margin-top: 130px;
+    font-weight: bold;
+}
+article:hover {
+    width: 250px;
+}
