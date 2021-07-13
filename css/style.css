@@ -6,35 +6,56 @@ article {
     width: 25px;
     height: 400px;
     background-color: gray;
-    transition: 0.8s;
+    transition: 0.6s;
+    position: absolute;
+}
+main {
     position: absolute;
 }
 .start-menu {
     transform: rotate(90deg);
     transform-origin: top left;
-    transition: left 1s;
+    transition: 0.6s;
     margin-left: 19px;
     width: 100px;
     height: 400px;
     color: white;
-    position: relative;
-    margin-top: 130px;
+    position: sticky;
+    margin-top: 145px;
     font-weight: bold;
     background-color: gray;
+    opacity: 1;
 }
 article:hover { 
     width: 250px;
 }
-.start-menu:hover {
-    left: 220px;
-    display: block;
+article:hover > div { 
+    margin-left: 240px;
+    opacity: 0;
 }
-/* ul {
-    margin-top: 10px;
-    height: 200px;
+ul {
+    list-style: none;
+    opacity: 1;
+    height: 110px;
     width: 200px;
     opacity: 1;
+    transition: 0.6s;
+    margin-left: -110px;
+    margin-top: -500px;
+    color: white;
+    /* list-style-image: url(img/photo_2021-07-13_17-50-38.png); */
 }
-ul:hover {
+li {
+    margin-bottom: 8px;
+}
+article:hover > ul {
+    margin-left: 50px;
     opacity: 1;
-} */
+}
+span {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 20px;
+}
