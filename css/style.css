@@ -12,13 +12,29 @@ article {
 .start-menu {
     transform: rotate(90deg);
     transform-origin: top left;
+    transition: left 1s;
     margin-left: 19px;
     width: 100px;
+    height: 400px;
     color: white;
-    position: sticky;
+    position: relative;
     margin-top: 130px;
     font-weight: bold;
+    background-color: gray;
 }
-article:hover {
+article:hover ~ .start-menu { 
     width: 250px;
+}
+/* .start-menu:hover {
+    left: 220px;
+    display: block;
+} */
+ul {
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+}
+ul:hover {
+    opacity: 1;
 }
